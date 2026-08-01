@@ -1,0 +1,25 @@
+{
+  "name": "playwright-test",
+  "version": "1.0.0",
+  "description": "Playwright 101 Assignment - TestMu AI Certification",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:scenario1": "npx playwright test tests/scenario1-simple-form.spec.ts",
+    "test:scenario2": "npx playwright test tests/scenario2-drag-drop-slider.spec.ts",
+    "test:scenario3": "npx playwright test tests/scenario3-input-form.spec.ts",
+    "test:testmu": "npx playwright test --config=playwright.config.testmu.ts",
+    "test:testmu:chrome": "npx playwright test --config=playwright.config.testmu.ts --project=Windows10-Chrome",
+    "test:testmu:firefox": "npx playwright test --config=playwright.config.testmu.ts --project=macOSCatalina-Firefox",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.1.2",
+    "dotenv": "^16.6.1"
+  }
+}
